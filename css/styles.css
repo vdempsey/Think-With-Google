@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic,900,900italic&subset=latin,latin-ext,cyrillic,cyrillic-ext,greek-ext,greek,vietnamese');
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+
+body {
+  background-color: #f2f2f2;
+}
+
+h2 {
+  font-family:  'Roboto', sans-serif;
+  font-weight: 200;
+  color: #757575;
+}
+.container {
+  width: 100%;
+  padding: 20px;
+}
+
+.container, .row {
+  /*margin: auto -0.75em;*/
+  background-color: #fff;
+  /*width: 90%;*/
+}
+
+.contentBanner {
+  width: 70%;
+  color: white;
+  position: absolute;
+  top: 55%;
+  margin-left: 30px;
+  font-size: 1.2em;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+
+.content {
+  text-align: center;
+}
+
+.captionBottom {
+  margin-top: 310px;
+  margin-left: 30px;
+  color: white;
+}
+
+.captionSmallthum {
+  position: absolute;
+  top: 310px;
+  left: 0;
+  right: 0;
+  color: #5d5d5e;
+  text-align: center;
+  margin: auto;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.captionLargethum {
+  padding: 25px 20px 20px 20px;
+  font-size: 16px;
+  color: #5d5d5e;
+}
+
+
+img {
+  width: 100%;
+}
+
+.graphic {
+  width:100%;
+}
+
+#one, #two, #three, #four, #five, #six {
+  position: relative;
+}
+
+#one {
+  position: relative;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5) ), url('https://storage.googleapis.com/twg-content/images/guest-editor.width-1600.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+#six {
+  position: relative;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5) ), url('https://storage.googleapis.com/twg-content/images/1095-Attention-Research-Thumbnail.width-1600.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+#one p.captionBanner {
+  position: absolute;
+  top: 30%;
+}
+
+#two .graphic {
+  background-image: url('https://storage.googleapis.com/twg-content/images/1106-B2B-mobile-landscape-thumbnail.width-1600.jpg');
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50%;
+}
+
+#three .graphic {
+  background-image: url('https://storage.googleapis.com/twg-content/images/1100-Groupon-Case-Study-Thumbnail.width-1600.jpg');
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50%;
+}
+
+#four .graphic {
+  background-image: url('https://storage.googleapis.com/twg-content/images/1110-Cloud-and-Ads-Executive-Perspective-Thum.width-1600.jpg');
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50%;
+}
+
+#five .graphic {
+  background-image: url('https://storage.googleapis.com/twg-content/images/1102-Carat-Agency-op-ed-inline-thumbnail.width-1600.jpg');
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50%;
+}
+
+.innercontainer {
+  background-color: white;
+  padding: 0.1px;
+  box-shadow:  0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  height: 350px;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 990px) {
+  h2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  #two .graphic {
+    width: 25%;
+    height: 120px;
+    background-size:125%;
+    float: left;
+  }
+  .content {
+    width: 60%;
+    float: left;
+    overflow: auto;
+  }
+
+  .captionSmallthum {
+    position: relative;
+    color: #5d5d5e;
+    text-align: left;
+    top: auto;
+    left: auto;
+    right: auto;
+    padding-left: 20px;
+    font-size: 13px;
+    font-weight: 300;
+
+  }
+
+  .captionLargethum {
+    padding: 25px 20px 20px 20px;
+    font-size: 16px;
+    color: #5d5d5e;
+    text-align: left;
+  }
+
+  .innercontainer {
+    height: 150px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+  }
+}
