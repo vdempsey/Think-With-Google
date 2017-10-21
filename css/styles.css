@@ -17,16 +17,20 @@ h2 {
   font-family:  'Roboto', sans-serif;
   font-weight: 200;
   color: #757575;
+  margin-left: 10px;
+  margin-bottom: 40px;
+  margin-top: 50px;
 }
-.container {
+/*.container {
   width: 100%;
   padding: 20px;
-}
+}*/
 
-.container, .row {
-  /*margin: auto -0.75em;*/
-  background-color: #fff;
-  /*width: 90%;*/
+
+
+.container-fluid {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .contentBanner {
@@ -41,33 +45,37 @@ h2 {
 }
 
 
-
 .content {
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .captionBottom {
-  margin-top: 310px;
+  margin-top: auto;
   margin-left: 30px;
   color: white;
 }
 
 .captionSmallthum {
-  position: absolute;
-  top: 310px;
-  left: 0;
-  right: 0;
   color: #5d5d5e;
   text-align: center;
-  margin: auto;
   font-size: 13px;
   font-weight: 300;
+  margin-top: auto;
+  /*margin-bottom: 20px;*/
 }
 
 .captionLargethum {
-  padding: 25px 20px 20px 20px;
-  font-size: 16px;
+  padding: 0px 20px;
+  font-size: 18px;
   color: #5d5d5e;
+  /*vertical-align: top;*/
+  align-items: flex-start;
+  /*margin-bottom: auto;
+  display: flex;*/
+  /*flex-direction: column;*/
 }
 
 
@@ -142,10 +150,14 @@ img {
 
 .innercontainer {
   background-color: white;
-  padding: 0.1px;
   box-shadow:  0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
   height: 350px;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -2px;
+  margin-right: -2px;
+  padding-bottom: 15px;
 }
 
 @media screen and (max-width: 990px) {
@@ -154,43 +166,52 @@ img {
   }
 }
 
-@media screen and (max-width: 765px) {
-  #two .graphic {
+@media screen and (max-width: 600px) {
+
+  #one, #six {
+    height: 350px;
+  }
+
+  .section {
+    width: 100%;
+    overflow: auto;
+  }
+
+  #two .graphic, #three .graphic, #four .graphic, #five .graphic {
     width: 25%;
-    height: 120px;
+    max-width: 120px;
+    height: auto;
+    margin:10px;
     background-size:125%;
-    float: left;
+
+    /*float: left;*/
   }
   .content {
-    width: 60%;
+    width: 65%;
     float: left;
     overflow: auto;
   }
 
   .captionSmallthum {
-    position: relative;
     color: #5d5d5e;
     text-align: left;
-    top: auto;
-    left: auto;
     right: auto;
-    padding-left: 20px;
+    padding-left: 10px;
     font-size: 13px;
     font-weight: 300;
 
   }
 
   .captionLargethum {
-    padding: 25px 20px 20px 20px;
+    padding: 10px;
     font-size: 16px;
     color: #5d5d5e;
     text-align: left;
   }
 
   .innercontainer {
-    height: 150px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 20px;
+    height: auto;
+    /*width: 100%;
+    margin: 10px;*/
   }
 }
