@@ -21,11 +21,6 @@ h2 {
   margin-bottom: 40px;
   margin-top: 50px;
 }
-/*.container {
-  width: 100%;
-  padding: 20px;
-}*/
-
 
 
 .container-fluid {
@@ -34,23 +29,16 @@ h2 {
 }
 
 .contentBanner {
-  width: 70%;
+  width: 75%;
   color: white;
   position: absolute;
-  top: 55%;
+  top: 53%;
   margin-left: 30px;
-  font-size: 1.2em;
+  font-size: 1.25em;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
 }
 
-
-.content {
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
 
 .captionBottom {
   margin-top: auto;
@@ -58,25 +46,28 @@ h2 {
   color: white;
 }
 
+.captionLargethum {
+  padding: 0px 25px;
+  font-size: 1.67rem;
+  color: #5d5d5e;
+  padding-top: 20px;
+  text-align: center;
+}
+
 .captionSmallthum {
   color: #5d5d5e;
   text-align: center;
   font-size: 13px;
   font-weight: 300;
-  margin-top: auto;
-  /*margin-bottom: 20px;*/
+  position: absolute;
+  top: 88%;
+  justify-content: flex-end;
+  left: 0;
+  right: 0;
 }
 
-.captionLargethum {
-  padding: 0px 20px;
-  font-size: 18px;
-  color: #5d5d5e;
-  /*vertical-align: top;*/
-  align-items: flex-start;
-  /*margin-bottom: auto;
-  display: flex;*/
-  /*flex-direction: column;*/
-}
+
+
 
 
 img {
@@ -105,11 +96,6 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
-}
-
-#one p.captionBanner {
-  position: absolute;
-  top: 30%;
 }
 
 #two .graphic {
@@ -154,7 +140,7 @@ img {
   height: 350px;
   margin-bottom: 25px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   margin-left: -2px;
   margin-right: -2px;
   padding-bottom: 15px;
@@ -164,9 +150,20 @@ img {
   h2 {
     display: none;
   }
+
+  .contentBanner {
+    width: 55%;
+    top: 60%;
+  }
+
 }
 
 @media screen and (max-width: 600px) {
+
+  .container-fluid {
+    margin-left: 1%;
+    margin-right: 1%;
+  }
 
   #one, #six {
     height: 350px;
@@ -183,9 +180,15 @@ img {
     height: auto;
     margin:10px;
     background-size:125%;
-
-    /*float: left;*/
   }
+
+  .contentBanner {
+    width: 88%;
+    padding-right: 30px;
+    bottom: 15%;
+    top: auto;
+  }
+
   .content {
     width: 65%;
     float: left;
@@ -196,22 +199,26 @@ img {
     color: #5d5d5e;
     text-align: left;
     right: auto;
+    left: auto;
+    top: 70%;
     padding-left: 10px;
     font-size: 13px;
     font-weight: 300;
-
+    margin-bottom: 10px;
   }
 
   .captionLargethum {
-    padding: 10px;
+    padding: 20px 10px;
     font-size: 16px;
     color: #5d5d5e;
     text-align: left;
   }
 
   .innercontainer {
+    min-height: 120px;
     height: auto;
-    /*width: 100%;
-    margin: 10px;*/
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
   }
 }
