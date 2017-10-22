@@ -34,7 +34,7 @@ h2 {
   position: absolute;
   top: 53%;
   margin-left: 30px;
-  font-size: 1.25em;
+  font-size: 1.8rem;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
 }
@@ -48,7 +48,7 @@ h2 {
 
 .captionLargethum {
   padding: 0px 25px;
-  font-size: 1.67rem;
+  font-size: 1.8rem;
   color: #5d5d5e;
   padding-top: 20px;
   text-align: center;
