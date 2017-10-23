@@ -30,6 +30,7 @@ a, a:hover {
 .container-fluid {
   margin-left: 20px;
   margin-right: 20px;
+  padding-bottom: 50px;
 }
 
 .contentBanner {
@@ -73,7 +74,6 @@ a, a:hover {
   left: 0;
   right: 0;
 }
-
 
 img {
   width: 100%;
