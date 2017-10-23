@@ -22,6 +22,10 @@ h2 {
   margin-top: 50px;
 }
 
+a, a:hover {
+  text-decoration: none;
+  color: inherit;
+}
 
 .container-fluid {
   margin-left: 20px;
@@ -44,30 +48,31 @@ h2 {
   margin-top: auto;
   margin-left: 30px;
   color: white;
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
 }
 
 .captionLargethum {
   padding: 0px 25px;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   color: #5d5d5e;
   padding-top: 20px;
   text-align: center;
 }
 
 .captionSmallthum {
-  color: #5d5d5e;
+  color: #7b7c7c;
   text-align: center;
   font-size: 13px;
   font-weight: 300;
+  letter-spacing: 0.5px;
   position: absolute;
   top: 88%;
   justify-content: flex-end;
   left: 0;
   right: 0;
 }
-
-
-
 
 
 img {
@@ -155,7 +160,6 @@ img {
     width: 55%;
     top: 60%;
   }
-
 }
 
 @media screen and (max-width: 600px) {
